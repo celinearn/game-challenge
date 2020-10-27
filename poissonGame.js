@@ -14,7 +14,7 @@ class poinssonGame{
     deplacementPoisson(){
         this.y = this.y + this.vitesseAxe
         this.vitesseAxe = this.vitesseAxe + this.gravity; 
-        this.y = 
+       // this.y = 
     }
 
 }
