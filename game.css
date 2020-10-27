@@ -79,4 +79,17 @@ button {
     margin-left: auto;
     margin-right: auto;
     z-index: 1;
+    transition: all ease 0.5s;
+}
+
+.seaweed {
+    background-image: url(img/seaweed.svg);
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    transition: all linear 2s;
 }
