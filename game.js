@@ -20,8 +20,19 @@
 
 //     }
 // }
-let boutonPlay=document.getElementById("boutonPlay");
-let flyingFish=document.getElementById("flyingfish");
+
+
+
+
+const boutonPlay= document.getElementById("boutonPlay");
+const flyingFish= document.getElementById("flyingfish");
+
+const flying= {
+    fish: document.getElementById("flyingfish"),
+    position:{
+        
+    }
+}
 
 
 function main(){
