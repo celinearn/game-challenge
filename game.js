@@ -1,17 +1,17 @@
-<<<<<<< HEAD
-let flyingFish = document.getElementById("flyingFish");
-const niveauDeFlotaison = 0;
+// <<<<<<< HEAD
+// let flyingFish = document.getElementById("flyingFish");
+// const niveauDeFlotaison = 0;
 
-function main() {
-	document.getElementById("bouttonPlay").addEventListener("click", fishAuBonEndroit(){
-				return flyingFish.positionY = niveauDeFlotaison;
-		})
+// function main() {
+// 	document.getElementById("bouttonPlay").addEventListener("click", fishAuBonEndroit(){
+// 				return flyingFish.positionY = niveauDeFlotaison;
+// 		})
 	
-}
+// }
 
-main();
-fishAuBonEndroit();
-=======
+// main();
+// fishAuBonEndroit();
+// =======
 // class FyingFish {
 //     constructor(){
 //         this.positionX=posX, //position sur l'axe X
@@ -67,4 +67,3 @@ window.addEventListener("keyup", event => {
     }, 2000);
 
 main();
->>>>>>> 513f26d99138d43a208ea520780b1c95e4994aec
