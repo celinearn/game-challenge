@@ -1,0 +1,95 @@
+body {
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+}
+
+
+#ciel {
+    width: 100vw;
+    height: 240px;
+    background-color: #81edec;
+}
+
+#mer {
+    width: 100vw;
+    height: 240px;
+    background-color: #01cec9;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    padding-top: 50px;
+    position: relative;
+    top: 40px;
+}
+
+h1 {
+    font-size: 90px;
+}
+
+footer {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    text-align: center;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+    bottom: 60px;
+}
+
+p {
+    padding-top: 100px;
+}
+
+.algue1, .algue2 {
+    height: 240px;
+    background-image: url(img/seaweed.svg);
+    background-repeat: no-repeat;
+}
+
+
+.algue2 {
+    background-image: url(img/seaweed.svg);
+    background-position: right;
+    margin-right: 4px;
+}
+
+button {
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px !important;
+    width: 180px;
+    height: 80px;
+    background-color: #f2d232 !important;
+    border: none;
+    color: white !important;
+    border-radius: 17px !important;
+    box-shadow: 0px 10px #02b7b3;
+}
+
+#flyingfish {
+    background-image: url(img/flying-fish.svg);
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    transition: all ease 0.5s;
+}
+
+.seaweed {
+    background-image: url(img/seaweed.svg);
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    transition: all linear 2s;
+}
