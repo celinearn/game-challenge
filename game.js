@@ -1,3 +1,4 @@
+
 // let flyingFish = document.getElementById("flyingFish");
 // const niveauDeFlotaison = 0;
 
@@ -10,6 +11,15 @@
 
 // main();
 // fishAuBonEndroit();
+
+
+
+//ajout de la couleur pour le background 
+function colorGame(){
+    document.body.style.background = "#00FFFF"
+} 
+
+
 // class FyingFish {
 //     constructor(){
 //         this.positionX=posX, //position sur l'axe X
@@ -91,3 +101,4 @@ function scorePlayer() {
 // }, 2000);
 
 main();
+
