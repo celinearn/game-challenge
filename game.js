@@ -1,4 +1,3 @@
-// <<<<<<< HEAD
 // let flyingFish = document.getElementById("flyingFish");
 // const niveauDeFlotaison = 0;
 
@@ -6,12 +5,11 @@
 // 	document.getElementById("bouttonPlay").addEventListener("click", fishAuBonEndroit(){
 // 				return flyingFish.positionY = niveauDeFlotaison;
 // 		})
-	
+
 // }
 
 // main();
 // fishAuBonEndroit();
-// =======
 // class FyingFish {
 //     constructor(){
 //         this.positionX=posX, //position sur l'axe X
@@ -19,7 +17,7 @@
 //         this.vitesseY=O //vitesse sur l'axe Y
 //         this.gravity=2 //gravité à appliquer (au plus elle est elevée, au plus l'objet redescend vite)
 //         this.size=50; //la taille du FlyingFish
-        
+
 //     };
 
 //     jump(){
@@ -34,36 +32,62 @@
 
 //     }
 // }
-let boutonPlay=document.getElementById("boutonPlay");
-let flyingFish=document.getElementById("flyingfish");
+let boutonPlay = document.getElementById("boutonPlay");
+let flyingFish = document.getElementById("flyingfish");
 
 
-function main(){
-    boutonPlay.addEventListener("click",function FlyingFishAuBonEndroit(){
-        boutonPlay.style.display="none";
+function main() {
+    boutonPlay.addEventListener("click", function FlyingFishAuBonEndroit() {
+        boutonPlay.style.display = "none";
+
+        window.addEventListener("keyup", event => {
+            if (event.isComposing || event.keyCode === 38) {
+                flyingFish.style.transform = "translateY(-200px)"
+                setTimeout(function () {
+                    flyingFish.style.transform = "translateY(0px)"
+                }, 500);
+            }
+            //do something
+        });
+
+        setInterval(function () {
+            document.getElementById('sw-box').insertAdjacentHTML("afterbegin", '<div class="seaweed"></div>')
+            let seaweed = document.querySelector(".seaweed");
+            setTimeout(function () {
+                seaweed.style.transform = "translateX(-2000px)"
+            }, 50);
+        }, 2000);
+
+        scorePlayer();
     })
-
-
 };
 
-window.addEventListener("keyup", event => {
-    if (event.isComposing || event.keyCode === 38) {
-      flyingFish.style.transform = "translateY(-200px)"
-      setTimeout(function(){ 
-        flyingFish.style.transform = "translateY(0px)"
+function scorePlayer() {
+    score = 0;
+    setInterval(function () {
+        score++;
+        document.getElementById('displayScore').innerHTML = score;  
     }, 500);
-    }
-    // do something
-  });
+}
 
-  setInterval(function(){ 
-    document.getElementById('sw-box').insertAdjacentHTML("afterbegin",'<div class="seaweed"></div>')
-    let seaweed=document.querySelector(".seaweed");
-    setTimeout(function(){ 
-        seaweed.style.transform = "translateX(-2000px)"
-    }, 50);
 
-    
-    }, 2000);
+// window.addEventListener("keyup", event => {
+// if (event.isComposing || event.keyCode === 38) {
+// flyingFish.style.transform = "translateY(-200px)"
+// setTimeout(function () {
+// flyingFish.style.transform = "translateY(0px)"
+// }, 500);
+// }
+// do something
+// });
+
+
+// setInterval(function () {
+// document.getElementById('sw-box').insertAdjacentHTML("afterbegin", '<div class="seaweed"></div>')
+// let seaweed = document.querySelector(".seaweed");
+// setTimeout(function () {
+// seaweed.style.transform = "translateX(-2000px)"
+// }, 50);
+// }, 2000);
 
 main();
