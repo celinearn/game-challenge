@@ -27,12 +27,6 @@
 const boutonPlay= document.getElementById("boutonPlay");
 const flyingFish= document.getElementById("flyingfish");
 
-const flying= {
-    fish: document.getElementById("flyingfish"),
-    position:{
-        
-    }
-}
 
 
 function main(){
@@ -52,6 +46,8 @@ window.addEventListener("keyup", event => {
     }
     // do something
   });
+
+
 
   setInterval(function(){ 
     document.getElementById('sw-box').insertAdjacentHTML("afterbegin",'<div class="seaweed"></div>')

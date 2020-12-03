@@ -3,19 +3,16 @@ body {
     margin: 0;
     height: 100vh;
 }
-
-
-#ciel {
-    width: 100vw;
-    height: 240px;
-    background-color: #81edec;
+#gameStage{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#mer {
-    width: 100vw;
-    height: 240px;
-    background-color: #01cec9;
-}
+ canvas{
+    display: block;
+ }
+
 
 .title {
     text-align: center;
